@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>No-No Words</title>
+    <meta name="keywords" content="bad words, word generator, bad word generator, naughty list, black list bad words, black list words, black list profanity, profanity, banned word list, banned words list, CSV list of banned words, bad words CSV list, list of bad words, list of naughty words, offensive words, block offensive words, block bad words "/>
+    <meta name="description" content="{% block sitedesc %}{% endblock %}">
+    {% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="http://nonowords.com"/>
+    <link href="{{url_for('index', _external=True)}}static/css/bootstrap.css" rel="stylesheet">
+    <link href="{{url_for('index', _external=True)}}static/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+            <h3 class="logo">No-No Words</h3>
+        </div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/nonowords.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52156627-1', 'nonowords.com');
+    ga('send', 'pageview');
+
+     </script>
+  </body>
+</html>

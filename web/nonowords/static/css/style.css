@@ -1,0 +1,78 @@
+.logo {
+    color: #D3845B;
+}
+
+#no-no-list-group {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y:scroll;
+    height: 400px;
+}
+.info {
+    text-align: center;
+}
+
+.list-heading {
+    display: inline-block;
+}
+
+.list-heading-download {
+    float:right;
+}
+
+.altchar {
+    margin-right: 45px;
+}
+
+.ad-row {
+    margin-top: 25px;
+}
+
+.jumbotron-index {
+    background-color: #313D53;
+    color: white;
+}
+
+.jumbotron-index h1 {
+    color: #D3845B;
+}
+
+.jumbotron-index p {
+    font-size:27px;
+    color: #D27486;
+}
+
+.panel-nono .panel-heading{
+    background-color: #313D53;
+}
+
+.panel-nono .panel-title{
+    color: #D3845B;
+}
+
+.panel-nono a{
+    color: white;
+}
+
+.btn-cta {
+    width: 250px;
+    height: 55px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.list-error {
+    margin-top: 15px;
+}
+
+.center-col {
+    float: none;
+    margin: 0 auto 0 auto;
+}
+
+.cta-col {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}

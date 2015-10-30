@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-index">
+    <h1>No no little Johnny,</h1>
+    <p class="lead">you can't have the username b4d4ss. Help prevent your users from using offensive words. People can be a little too creative so lets stop the no-no words.</p>
+    <div class="row">
+        <div class="col-md-3">
+            <div id="errordiv" class="alert alert-danger form-alert fade list-error">
+                <span id="errormessage">Error</span>
+            </div>
+        </div>
+        <div class="col-md-6 center-col cta-col">
+            <div class="input-group input-group-lg">
+                <input id="userWordList" type="text" class="form-control" value="YourCoName, badass">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-success btn-lg" onclick="fetchWordList();">Go!</button>
+                </span>
+            </div>
+        </div><!-- end col -->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5 center-col">
+        <div class="panel panel-default panel-nono">
+            <div class="panel-heading">
+                <h3 class="panel-title list-heading">No-No Words</h3>
+                <a class="downloadlist list-heading list-heading-download" onclick="downloadWordList();"href="#">
+                    <span class="glyphicon glyphicon-download" style="font-size:20px;"></span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <ul id="no-no-list-group" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div><!-- End col -->
+</div>
+                   
+{% endblock %}

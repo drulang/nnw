@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-9">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Letter</th>
+                    <th>Alternate Characters</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for letter, altchars in mappings.iteritems() %}
+                <tr>
+                    <td>{{ letter }}</td>
+                    <td>
+                        {% for char in altchars %}
+                        <span class="altchar">{{ char }}</span>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-3">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- NoNoWords-Alphabet -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:160px;height:600px"
+              data-ad-client="ca-pub-6587813102165390"
+                   data-ad-slot="3447616465"></ins>
+         <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+           </script>
+    </div>
+</div>
+{% endblock %}
